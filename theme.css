@@ -204,7 +204,7 @@ body {
    display: none;
 }
 .activityUserPopout-2yItg2 {
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0 !important;
 }
 .headerStreaming-2FjmGz {
    background-color: #593695 !important;
