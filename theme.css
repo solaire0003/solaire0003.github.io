@@ -66,6 +66,38 @@ body {
 }
 /* Server Dropdown Modal */
 
+/* Ping */
+.ping-2NgC8E {
+	width: 18px;
+	height: 18px
+}
+
+.active-2h1NLh {
+	transform-origin: bottom;
+	animation: ping-counter 1s linear infinite
+}
+
+.active-2h1NLh:nth-child(2) {
+	animation-delay: .5s
+}
+
+.active-2h1NLh:nth-child(3) {
+	animation-delay: 1s
+}
+
+@keyframes ping-counter {
+	0% {
+		transform: scaleY(1)
+	}
+	50% {
+		transform: scaleY(.5)
+	}
+	100% {
+		transform: scaleY(1)
+	}
+}
+/* Ping */
+
 /* Upload Modal */
 .uploadModal-2ifh8j .inner-3nWsbo {
    border: none;
@@ -192,6 +224,11 @@ body {
    text-align: -webkit-center;
 }
 /* Custom Channels/Roles */
+
+.container-1giJp5,
+.panel-24C3ux {
+   border-bottom: 0px;
+}
 
 /* Custom User Profile */
 .userPopout-3XzG_A {
