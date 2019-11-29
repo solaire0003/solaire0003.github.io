@@ -429,9 +429,7 @@ body {
    margin: 0 5px !important;
 }
 /* Custom CSS */
-.buttons-205you {
-   height: 0px;	
-}
+
 /* Codeblocks */
 .hljs {
    --codeblockcolor: #747f8d;
