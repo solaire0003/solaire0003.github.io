@@ -162,6 +162,15 @@ body {
 /* White name tag */
 
 /* Smaller Chat */
+@keyframes chatslide {
+	from {
+		transform: translate(0, -50px);
+		opacity: 0
+	}
+}
+.messagesWrapper-3lZDfY .scrollerWrap-2su1QI {
+	animation: chatslide 350ms ease
+}
 .containerCozy-jafyvG:not(:last-child) {
    padding: 10px 0px !important;
 }
@@ -276,7 +285,7 @@ body {
 }
 .userPopout-3XzG_A {
    box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
-   animation: userPopout 250ms;
+   animation: userPopout 350ms;
 }
 .avatarHintInner-Dco91E {
    display: block;
