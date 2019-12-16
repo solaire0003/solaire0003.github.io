@@ -33,23 +33,24 @@ body {
 
 /* Mention Color Fix */
 .containerCozy-jafyvG .isMentioned-N-h9aa {
-   background: #49443c !important;
+    background: #49443c !important;
 }
 /* Mention Color Fix */
 
-/* Tooltip */
+/* Custom Tooltip */
 #app-mount  .tooltip-2QfLtc {
-  border-radius: var(--roundness) !important;
-  box-shadow: 0px 0px 10px #000;
-  background: var(--quaternary-color);
+    border-radius: var(--roundness) !important;
+    box-shadow: 0px 0px 10px #000;
+    background: var(--tertiary-color);
 }
 #app-mount .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
-  border-top-color: var(--quaternary-color);
+    border-top-color: var(--tertiary-color);
+	text-align: center;
 }
 .layerContainer-yqaFcK .dst-tooltip.tooltip-2QfLtc.tooltipRight-2JM5PQ {
-  background-color: var(--quaternary-color) !important;
+    background-color: var(--tertiary-color) !important;
 }
-/* Tooltip */
+/* Custom Tooltip */
 
 /* Fly in Voice Chat buttons fix */
 .container-3baos1 .noWrap-3jynv6 {
