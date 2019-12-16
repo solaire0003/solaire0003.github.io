@@ -176,6 +176,10 @@ body {
 }
 /* White name tag */
 
+.friendsRow-2yicud:hover {
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5)!important;
+}
+
 /* Smaller Chat */
 @keyframes chatslide {
 	from {
