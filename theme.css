@@ -487,7 +487,6 @@ body {
 	color: #fff;
 	font-size: 12px;
 	font-weight: 450;
-	margin-bottom: 7px;
   padding:0 10px;
   line-height:0;
 	position: absolute;
@@ -632,9 +631,14 @@ body {
 }
 
 .hljs[class~=abnf i]::before {
-	content: "abnf"
+	content: "ABNF"
 }
-
+.hljs[class~=clojure i]::before {
+	content: "Clojure"
+}
+.hljs[class~=objc i]::before {
+	content: "Objective-C"
+}
 .hljs[class~=javascript i],
 .hljs[class~=js i] {
 	--codeblockcolor: #165eab
@@ -674,7 +678,7 @@ body {
 }
 
 .hljs[class~=html i] {
-	--codeblockcolor: #16ab6f
+	--codeblockcolor: #f16529
 }
 
 .hljs[class~=xl i] {
@@ -725,10 +729,6 @@ body {
 
 .hljs[class~=go i] {
 	--codeblockcolor: #75cede
-}
-
-.hljs[class~=" ini"i] {
-	--codeblockcolor: #5a75c0
 }
 
 .hljs[class~=rust i] {
@@ -821,11 +821,13 @@ body {
 	content: "Difference"
 }
 
-.hljs[class~=cs i]::before {
+.hljs[class~=cs i]::before,
+.hljs[class~=csharp i]::before {
 	content: "CS"
 }
 
-.hljs[class~=ini i]::before {
+.hljs[class~=ini i]::before,
+.hljs[class~=toml i]::before {
 	content: "InItialization File"
 }
 
@@ -857,7 +859,8 @@ body {
 	--codeblockcolor: #f4b41c
 }
 
-.hljs[class~=ini i] {
+.hljs[class~=ini i],
+.hljs[class~=TOML i] {
 	--codeblockcolor: #5d91ff
 }
 
@@ -869,10 +872,6 @@ body {
 	--codeblockcolor: #5c87e2
 }
 
-.hljs[class~=TOML i] {
-	--codeblockcolor: #4dc7d9
-}
-
 .hljs[class~=nginx i] {
 	--codeblockcolor: #4bd1a9
 }
@@ -880,6 +879,54 @@ body {
 .hljs[class~=perl i] {
 	--codeblockcolor: #a462d0
 }
+.hljs[class~=yaml i]::before {
+	content: "YAML"
+}
+
+.hljs[class~=shell i]::before,
+.hljs[class~=sh i]::before {
+	content: "Shell"
+}
+
+.hljs[class~=kotlin i]::before {
+	content: "Kotlin"
+}
+
+.hljs[class~=apache i]::before {
+	content: "Apache"
+}
+
+.hljs[class~=apache i] {
+	--codeblockcolor: #402a72
+}
+
+.hljs[class~=kotlin i] {
+	--codeblockcolor: #497bbc
+}
+
+.hljs[class~=shell i],
+.hljs[class~=sh i] {
+	--codeblockcolor: #99b9f9
+}
+.hljs[class~=objc i] {
+	--codeblockcolor: #0092db
+}
+.hljs[class~=d i]::before {
+	content: "Perl"
+}
+
+.hljs[class~=d i]::before {
+	content: "d"
+}
+
+.hljs[class~=d i] {
+	--codeblockcolor: #B03931
+}
+.hljs[class~=clojure i] {
+	--codeblockcolor: #5cc70c
+}
+.hljs[class~=yaml i] {
+	--codeblockcolor: #0295a5
 /* Codeblocks */
 
 /* Settings */
