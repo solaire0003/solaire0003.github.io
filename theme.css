@@ -38,7 +38,7 @@ body {
 /* Mention Color Fix */
 
 /* Custom Tooltip */
-#app-mount  .tooltip-2QfLtc {
+#app-mount .tooltip-2QfLtc {
     border-radius: var(--roundness) !important;
     box-shadow: 0px 0px 10px #000;
     background: var(--tertiary-color);
@@ -147,11 +147,11 @@ body {
 }   
 /* Unread Messages Glow */
 
-/* Show Image Details Plugin */
+/* Show Image Details Plugin Text Glow*/
 .horizontal-1ae9ci>.flex-1xMQg5:first-child, .horizontal-1ae9ci>.flexChild-faoVW3:first-child {
    text-shadow: 0 0 8px currentColor;
 }
-/* Show Image Details Plugin */
+/* Show Image Details Plugin Text Glow*/
 
 /* Attachments Shadow */
 #app-mount .attachment-33OFj0,
@@ -206,8 +206,8 @@ body {
 .contextMenu-HLZMGh {
 	border-radius: var(--roundness);
 	box-shadow: inset 0 0 0 100vmax rgba(255, 255, 255, .06), 0 0 12px #000!important;
-	animation: context-open-new .3s cubic-bezier(0, 0, 0, 1);
-	transform-origin: top;	
+	animation: context-open-new .4s cubic-bezier(0, 0, 0, 1);
+	transform-origin: top;
 	padding: 0;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -462,310 +462,423 @@ body {
 
 /* Codeblocks */
 .hljs {
-   --codeblockcolor: #747f8d;
-   max-height: 250px;
-   border-radius: 0;
+  --codeblockcolor: #747f8d;
+  position:relative;
+  box-sizing:border-box;
+  padding-left:32px !important;
+  padding-bottom:2px;
+  padding-top:30px !important;
+  border-radius: 0;
+  border: none!important;
+  background:transparent !important;
+  font-size:12px !important;
 }
-.markup-2BOw-j code {
-   border: none!important;
+
+.container-206Blv {
+  position:relative;
 }
-.hljs::-webkit-scrollbar-track {
-   margin-top: 24px!important;
-   background: #000!important;
-}
-.hljs::-webkit-scrollbar {
-   background-color: var(--codeblockcolor);
-}
-.hljs::-webkit-scrollbar-thumb {
-   background: var(--codeblockcolor)!important;
-}
-.hljs::-webkit-scrollbar {
-   width: 3px!important;
-}
+
 .hljs::before {
-   content: 'Unknown Language';
-   width: calc(100% + 4px);
-   height: 24px;
-   top: 0px;
-   color: #fff;
-   font-size: 12px;
-   font-weight: 450;
-   margin-top: -7px;
-   margin-left: -7px;
-   margin-bottom: 7px;
-   text-transform: uppercase;
-   padding-left: 3px;
-   position: sticky;
-   align-items: center;
-   display: flex;
-   font-family: Whitney!important;
-   background-color: var(--codeblockcolor)!important;
-   box-shadow: 0 0 12px var(--codeblockcolor);
-   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAA+VBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9BnGuhAAAAUnRSTlMAAgMEBRobHB0eHyAkJSYnKS0uMzc4OTpFRkdISUpLTFBRUlNUVldYWW9wcXJzdHV2d3p7f4CBh4iJioyNjo+oq8XGx8je3+Hj5Oru9vf4+fr8vTsUbAAAAjdJREFUeAHt2VlPU1EUxfElqGhxEBykUBRwQJECVdGCs0hVpLXd3//DGOLqzbXbuPZ5OImB83/l4ZcTsrKTW5TORKVSabrLbiBfl43dQr7uGruAfD2mMTyHfLWJfEXG3hP5hIx9JPIBGftC5A0y9p3IBvJ1fkTkwWncYtnixjX8vXdEPsN1/SmS2rejudQtzh3ZfpphVGJbpGFUwgaV8BbnTwwqYeNEmY9vkQaVuEEltMWbP2zcHgK9sKpBC5PdMXYR9ZZ/WtXz2DvY8QJcj8ZbnMIfLRybeIs29BabfadEjGboLqYre1bVb8otakUbcota0Ub6XVwUijL8FqWijMXAXdSKMPRd5BZdSzWlGzf0FrXijaXwXdSKNvQWtSINvUWt7IJ1haG26GoNaoo3WnDpLWqFhr8feotxZVcZeotaCf1D3F2ckUjfql4DHasaroAlbtG1MrSqDqAVtUVh7ABa0Vt0rXoD2NGK3qIwtKK3KAynrMa3qIxtIFmZHm/xYarBtgPKJbVFYWhF3EVhxBW5xbWasQWfVvQW10fSALaEIraoDaespW7xiTTYK6sa3MNkB/zTW8B3353DyFtG68Etune0IWp7RW8x0fjXqZwxdhuTLQ+s6iVY7C292egWr36zcZsI1faG3OJsL2ywzd9GI75FKjTiymEjbYuNHo24QiO2RSqH9iz5U5TYovgU9d9+RxVbTE/fxVy5LWZIbFFXftPI0cFp+U2jbDGpKx02hVKpVDoL/QKk+Asua0/jMQAAAABJRU5ErkJggg==)!important;
-   background-size: 20px!important;
-   background-position: 5px!important;
-   background-repeat: no-repeat!important;
-   text-indent: 25px!important;
+	content: 'Unknown Language';
+	width: 100%;
+	height:26px;
+  top: 0;
+  left:0;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 450;
+	margin-bottom: 7px;
+  padding:0 10px;
+  line-height:0;
+	position: absolute;
+  display: flex;
+  align-items:center;
+	font-family: Whitney!important;
+	background-color: var(--codeblockcolor)!important;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAA+VBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9BnGuhAAAAUnRSTlMAAgMEBRobHB0eHyAkJSYnKS0uMzc4OTpFRkdISUpLTFBRUlNUVldYWW9wcXJzdHV2d3p7f4CBh4iJioyNjo+oq8XGx8je3+Hj5Oru9vf4+fr8vTsUbAAAAjdJREFUeAHt2VlPU1EUxfElqGhxEBykUBRwQJECVdGCs0hVpLXd3//DGOLqzbXbuPZ5OImB83/l4ZcTsrKTW5TORKVSabrLbiBfl43dQr7uGruAfD2mMTyHfLWJfEXG3hP5hIx9JPIBGftC5A0y9p3IBvJ1fkTkwWncYtnixjX8vXdEPsN1/SmS2rejudQtzh3ZfpphVGJbpGFUwgaV8BbnTwwqYeNEmY9vkQaVuEEltMWbP2zcHgK9sKpBC5PdMXYR9ZZ/WtXz2DvY8QJcj8ZbnMIfLRybeIs29BabfadEjGboLqYre1bVb8otakUbcota0Ub6XVwUijL8FqWijMXAXdSKMPRd5BZdSzWlGzf0FrXijaXwXdSKNvQWtSINvUWt7IJ1haG26GoNaoo3WnDpLWqFhr8feotxZVcZeotaCf1D3F2ckUjfql4DHasaroAlbtG1MrSqDqAVtUVh7ABa0Vt0rXoD2NGK3qIwtKK3KAynrMa3qIxtIFmZHm/xYarBtgPKJbVFYWhF3EVhxBW5xbWasQWfVvQW10fSALaEIraoDaespW7xiTTYK6sa3MNkB/zTW8B3353DyFtG68Etune0IWp7RW8x0fjXqZwxdhuTLQ+s6iVY7C292egWr36zcZsI1faG3OJsL2ywzd9GI75FKjTiymEjbYuNHo24QiO2RSqH9iz5U5TYovgU9d9+RxVbTE/fxVy5LWZIbFFXftPI0cFp+U2jbDGpKx02hVKpVDoL/QKk+Asua0/jMQAAAABJRU5ErkJggg==)!important;
+	background-size: 15px!important;
+	background-position: 8px center!important;
+	background-repeat: no-repeat!important;
+	text-indent: 20px!important;
+	border-top: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  box-sizing:border-box;
 }
+
 .hljs[class~=javascript i]::before,
 .hljs[class~=js i]::before {
-   content: "Javascript"
+	content: "Javascript"
 }
+
 .hljs[class~=css i]::before {
-   content: "Cascading Style Sheet"
+	content: "Cascading Style Sheet"
 }
+
 .hljs[class~=bash i]::before {
-   content: "Bash"
+	content: "Bash"
 }
+
 .hljs[class~=markdown i]::before,
 .hljs[class~=md i]::before {
-   content: "Markdown"
+	content: "Markdown"
 }
+
 .hljs[class~=html i]::before {
-   content: "HTML"
+	content: "HTML"
 }
+
 .hljs[class~=xl i]::before {
-   content: "eXtensible Language"
+	content: "eXtensible Language"
 }
+
 .hljs[class~=coffee i]::before {
-   content: "Coffee (Javascript)"
+	content: "Coffeescript"
 }
+
 .hljs[class~=ruby i]::before {
-   content: "Ruby"
+	content: "Ruby"
 }
+
 .hljs[class~=sql i]::before {
-   content: "SQL"
+	content: "SQL"
 }
+
 .hljs[class~=java i]::before {
-   content: "Java"
+	content: "Java"
 }
+
 .hljs[class~=py i]::before,
 .hljs[class~=python i]::before {
-   content: "Python"
+	content: "Python"
 }
+
 .hljs[class~=vb i]::before,
 .hljs[class~=visualbasic i]::before {
-   content: "Visual Basic"
+	content: "Visual Basic"
 }
+
 .hljs[class~=lua i]::before {
-   content: "Lua"
+	content: "Lua"
 }
+
 .hljs[class~=php i]::before {
-   content: "Php"
+	content: "Php"
 }
+
 .hljs[class~=swift i]::before {
-   content: "Swift"
+	content: "Swift"
 }
+
 .hljs[class~=makefile i]::before {
-   content: "Makefile"
+	content: "Makefile"
 }
+
 .hljs[class~=go i]::before {
-   content: "Go"
+	content: "Go"
 }
+
 .hljs[class~=" ini"i]::before {
-   content: " ini"
+	content: "Initialization File"
 }
+
 .hljs[class~=rust i]::before {
-   content: "Rust"
+	content: "Rust"
 }
+
 .hljs[class~=prolog i]::before {
-   content: "Prolog"
+	content: "Prolog"
 }
+
 .hljs[class~=ts i]::before,
 .hljs[class~=typescript i]::before {
-   content: "TypeScript"
+	content: "TypeScript"
 }
+
 .hljs[class~=http i]::before {
-   content: "HTTP"
+	content: "HyperText Transfer Protocol"
 }
+
 .hljs[class~=json i]::before {
-   content: "Json"
+	content: "JSON"
 }
+
 .hljs[class~=xml i]::before {
-   content: "XML"
+	content: "XML"
 }
+
 .hljs[class~=less i]::before {
-   content: "Less"
+	content: "Less"
 }
+
 .hljs[class~=sass i]::before,
 .hljs[class~=scss i]::before {
-   content: "SCSS"
+	content: "SCSS"
 }
+
+.hljs[class~=elm i]::before {
+	content: "Elm"
+}
+
+.hljs[class~=cpp i]::before {
+	content: "C++"
+}
+
+.hljs[class~=hbs i]::before {
+	content: "Handlebars"
+}
+
+.hljs[class~=1c i]::before {
+	content: "1c"
+}
+
+.hljs[class~=abnf i]::before {
+	content: "abnf"
+}
+
 .hljs[class~=javascript i],
 .hljs[class~=js i] {
-   --codeblockcolor: #165eab
+	--codeblockcolor: #165eab
 }
+
+.hljs[class~=1c i] {
+	--codeblockcolor: #703B30
+}
+
+.hljs[class~=abnf i] {
+	--codeblockcolor: #227A70
+}
+
+.hljs[class~=elm i] {
+	--codeblockcolor: #50d4ee
+}
+
+.hljs[class~=cpp i] {
+	--codeblockcolor: #99182E
+}
+
+.hljs[class~=hbs i] {
+	--codeblockcolor: #f0772b
+}
+
 .hljs[class~=css i] {
-   --codeblockcolor: #1973d3
+	--codeblockcolor: #1973d3
 }
+
 .hljs[class~=bash i] {
-   --codeblockcolor: #ab1663
+	--codeblockcolor: #ab1663
 }
+
 .hljs[class~=markdown i],
 .hljs[class~=md i] {
-   --codeblockcolor: #ab2e16
+	--codeblockcolor: #ab2e16
 }
+
 .hljs[class~=html i] {
-   --codeblockcolor: #16ab6f
+	--codeblockcolor: #16ab6f
 }
+
 .hljs[class~=xl i] {
-   --codeblockcolor: #16ab6f
+	--codeblockcolor: #16ab6f
 }
+
 .hljs[class~=coffee i] {
-   --codeblockcolor: #3a1b1b
+	--codeblockcolor: #3a1b1b
 }
+
 .hljs[class~=ruby i] {
-   --codeblockcolor: #e73e3e
+	--codeblockcolor: #e73e3e
 }
+
 .hljs[class~=sql i] {
-   --codeblockcolor: #4474ca
+	--codeblockcolor: #4474ca
 }
+
 .hljs[class~=java i] {
-   --codeblockcolor: #eb2d2f
+	--codeblockcolor: #eb2d2f
 }
+
 .hljs[class~=py i],
 .hljs[class~=python i] {
-   --codeblockcolor: #eb2d2f
+	--codeblockcolor: #eb2d2f
 }
+
 .hljs[class~=vb i],
 .hljs[class~=visualbasic i] {
-   --codeblockcolor: #839700
+	--codeblockcolor: #839700
 }
+
 .hljs[class~=lua i] {
-   --codeblockcolor: #2ecc71
+	--codeblockcolor: #2ecc71
 }
+
 .hljs[class~=php i] {
-   --codeblockcolor: #6e81b6
+	--codeblockcolor: #6e81b6
 }
+
 .hljs[class~=swift i] {
-   --codeblockcolor: #fd7837
+	--codeblockcolor: #fd7837
 }
+
 .hljs[class~=makefile i] {
-   --codeblockcolor: #8a2b0f
+	--codeblockcolor: #8a2b0f
 }
+
 .hljs[class~=go i] {
-   --codeblockcolor: #75cede
+	--codeblockcolor: #75cede
 }
+
 .hljs[class~=" ini"i] {
-   --codeblockcolor: #5a75c0
+	--codeblockcolor: #5a75c0
 }
+
 .hljs[class~=rust i] {
-   --codeblockcolor: #000
+	--codeblockcolor: #000
 }
+
 .hljs[class~=prolog i] {
-   --codeblockcolor: #ef4d25
+	--codeblockcolor: #ef4d25
 }
+
 .hljs[class~=ts i],
 .hljs[class~=typescript i] {
-   --codeblockcolor: #03324c
+	--codeblockcolor: #03324c
 }
+
 .hljs[class~=http i] {
-   --codeblockcolor: #618f10
+	--codeblockcolor: #618f10
 }
+
 .hljs[class~=json i] {
-   --codeblockcolor: #108f66
+	--codeblockcolor: #108f66
 }
+
 .hljs[class~=xml i] {
-   --codeblockcolor: #8444af
+	--codeblockcolor: #8444af
 }
+
 .hljs[class~=less i] {
-   --codeblockcolor: #1d365d
+	--codeblockcolor: #1d365d
 }
+
 .hljs[class~=sass i],
 .hljs[class~=scss i] {
-   --codeblockcolor: #bf4080
+	--codeblockcolor: #bf4080
 }
+
 .hljs-selector-tag {
-   color: #b2ccd6!important
+	color: #b2ccd6!important
 }
+
 .hljs-selector-class {
-   color: #ffcb6b!important
+	color: #ffcb6b!important
 }
+
 .hljs-attr,
 .hljs-keyword,
 .hljs-meta,
 .hljs-selector-id {
-   color: #c792ea!important
+	color: #c792ea!important
 }
+
 .hljs-selector-attr {
-   color: #89ddf3!important
+	color: #89ddf3!important
 }
+
 .hljs-attribute,
 .hljs-doctag,
 .hljs-literal,
 .hljs-meta-string,
 .hljs-regexp,
 .hljs-selector-pseudo {
-   color: #73d1c8!important
+	color: #73d1c8!important
 }
+
 .hljs-number {
-   color: #ffe082!important
+	color: #ffe082!important
 }
+
 .hljs-bullet,
 .hljs-subst,
 .hljs-symbol,
 .hljs-template-variable,
 .hljs-type,
 .hljs-variable {
-   color: #f07178!important
+	color: #f07178!important
 }
+
 .hljs-link,
 .hljs-string {
-   color: #c3e88d!important
+	color: #c3e88d!important
 }
+
 .hljs-built_in,
 .hljs-name,
 .hljs-section,
 .hljs-title {
-   color: #82aaff!important
+	color: #82aaff!important
 }
 .hljs[class~=diff i]::before {
-   content: "Difference"
+	content: "Difference"
 }
+
 .hljs[class~=cs i]::before {
-   content: "CS"
+	content: "CS"
 }
+
 .hljs[class~=ini i]::before {
-   content: "InItialization File"
+	content: "InItialization File"
 }
+
 .hljs[class~=autohotkey i]::before {
-   content: "AutoHotkey"
+	content: "AutoHotkey"
 }
+
 .hljs[class~=asciidoc i]::before {
-   content: "Ascii"
+	content: "Ascii"
 }
+
 .hljs[class~=TOML i]::before {
-   content: "TOML"
+	content: "TOML"
 }
+
 .hljs[class~=nginx i]::before {
-   content: "Nginx"
+	content: "Nginx"
 }
+
 .hljs[class~=perl i]::before {
-   content: "Perl"
+	content: "Perl"
 }
+
 .hljs[class~=diff i] {
-   --codeblockcolor: #81c529
+	--codeblockcolor: #81c529
 }
+
 .hljs[class~=cs i] {
-   --codeblockcolor: #f4b41c
+	--codeblockcolor: #f4b41c
 }
+
 .hljs[class~=ini i] {
-   --codeblockcolor: #5d91ff
+	--codeblockcolor: #5d91ff
 }
+
 .hljs[class~=autohotkey i] {
-   --codeblockcolor: #dc5159
+	--codeblockcolor: #dc5159
 }
+
 .hljs[class~=asciidoc i] {
-   --codeblockcolor: #5c87e2
+	--codeblockcolor: #5c87e2
 }
+
 .hljs[class~=TOML i] {
-   --codeblockcolor: #4dc7d9
+	--codeblockcolor: #4dc7d9
 }
+
 .hljs[class~=nginx i] {
-   --codeblockcolor: #4bd1a9
+	--codeblockcolor: #4bd1a9
 }
+
 .hljs[class~=perl i] {
-   --codeblockcolor: #a462d0
+	--codeblockcolor: #a462d0
 }
 /* Codeblocks */
 
@@ -775,7 +888,37 @@ body {
 .side-8zPYf6 .item-PXvHYJ[style*="color: rgb(114, 137, 218)"] {
    color: #7289da !important;
 }
-/* Nitro Font Color Fix */
+/* Nitro Font Color Fix *
+
+.wrapper-sa6paO {
+    width: 100%;
+    height: 100%;
+}
+
+.listItem-2P_4kh .item-2hkk8m {
+  background: none;
+  margin: 0;
+  width: 55px;
+  left: 8px;
+  bottom: -3px;
+  height: 55px !important;
+  box-shadow: 0 0;
+  opacity: 0.7 !important; 
+}
+
+.listItem-2P_4kh .item-2hkk8m::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border: 2px solid transparent;
+}
+
+.listItem-2P_4kh.bd-unread .item-2hkk8m::before {
+  border-color: #fff;
+  border-radius: var(--roundness);
+}
 
 /* Settings Icons */
 .layer-3QrUeG[aria-label="USER_SETTINGS"] .item-PXvHYJ { padding-left: 50px; }
