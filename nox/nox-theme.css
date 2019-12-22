@@ -530,8 +530,8 @@ svg[name="Nova_AddReaction"] path{
 .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud {
     background: var(--nox-level1);
 }
-.friendsRow-2yicud:hover {
-	background: var(--nox-level3);
+.container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover {
+	background: var(--nox-level3) !important;
 }
 /* Fixes */
 
