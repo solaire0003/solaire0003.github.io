@@ -533,6 +533,12 @@ svg[name="Nova_AddReaction"] path{
 .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover {
 	background: var(--nox-level3) !important;
 }
+#bd-settingspane-container .ui-switch-item {
+	background: var(--nox-level3) !important;
+}
+.contentColumn-2hrIYH .notDetected-33MY4s {
+	background: var(--nox-level3);
+}
 /* Fixes */
 
 /* Codeblocks */
@@ -1170,6 +1176,15 @@ svg[name="Nova_AddReaction"] path{
   -ms-flex-pack: end;
   flex: 0;
   z-index: 1;
+}
+.standardSidebarView-3F1I7i .contentColumn-2hrIYH, 
+.standardSidebarView-3F1I7i .customColumn-Rb6toI {
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 460px;
 }
 
 .layer-3QrUeG[aria-label*="SETTINGS"] .sidebarRegion-VFTUkN .sidebar-CFHs9e:before, .layer-3QrUeG[aria-label*="RTC"] .sidebarRegion-VFTUkN .sidebar-CFHs9e:before { content: "SETTINGS"; position: absolute; top: 0; right: 0; color: #fff; background: #191919; width: 226px; z-index: 1; padding: 15px 8px; box-sizing: border-box;}
