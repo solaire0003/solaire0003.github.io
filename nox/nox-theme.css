@@ -163,7 +163,7 @@ body {
     top: 0;
 }
 #bfredux:before {
-	background: var(--nox-level3);
+	background: var(--nox-level3) !important;
 }
 form .channelTextArea-rNsIhG {
     background: var(--nox-level3);
