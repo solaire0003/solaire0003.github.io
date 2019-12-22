@@ -127,15 +127,14 @@ body {
 .embedVideo-3nf0O9,
 .spoilerContainer-331r0R,
 .imageWrapper-2p5ogY {
-    border-radius:3px;
-    box-shadow:0 3px 7px rgba(0,0,0,0.4);
-    transition:350ms cubic-bezier(0.2,0,0,1)!important;
+    border-radius: 0;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.4);
 }
 .embedVideo-3nf0O9:hover,
 .imageWrapper-2p5ogY:hover,
 .spoilerContainer-331r0R:hover {
-    box-shadow:0 5px 15px rgba(0,0,0,0.5);
-    transition:350ms cubic-bezier(0.2,0,0,1)!important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: 200ms cubic-bezier(0.2, 0, 0, 1) !important;
 }
 /* Attachments Shadow */
 
