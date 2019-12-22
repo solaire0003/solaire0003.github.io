@@ -166,12 +166,11 @@ body {
 .container-1YxwTf .avatar-17mtNa {
     top: 0;
 }
-#app-mount .container-3baos1{
-	height: 60px;
+#bfredux:before {
+	background: var(--nox-level3);
 }
 form .channelTextArea-rNsIhG {
     background: var(--nox-level3);
-	height: 60px;
 }
 .attachWrapper-2TRKBi {
     border-right: 0;
