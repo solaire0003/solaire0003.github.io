@@ -178,6 +178,9 @@ form .channelTextArea-rNsIhG {
 .chat-3bRxxu form .typing-2GQL18 {
 	background-color: var(--nox-level3) !important;
 }
+.theme-dark .autocomplete-1vrmpx {
+	background-color: var(--nox-level3) !important;
+}
 /* Chat */
 
 /* Custom Context */
