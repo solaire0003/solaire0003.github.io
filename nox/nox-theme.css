@@ -22,9 +22,6 @@ body {
     --rs-streaming-color: #643da7; /* color for streaming status */
 }
 
-.container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud {
-      background: var(--nox-level1);
-}
 .perksModalContentWrapper-2HU6uL {
     background-color: var(--nox-level1);
 }
@@ -526,6 +523,15 @@ svg[name="Nova_AddReaction"] path{
 }
 .tierMarker-5HkGJ_.tierMarkerSelectable-3t7r2q{
     background: var(--nox-level2)!important;
+}
+.theme-dark .cardPrimaryEditable-3KtE4g, .theme-dark .cardPrimaryOutline-29Ujqw, .theme-dark .cardPrimary-1Hv-to {
+	background: var(--nox-level3);
+}
+.container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud {
+    background: var(--nox-level1);
+}
+.friendsRow-2yicud:hover {
+	background: var(--nox-level3);
 }
 /* Fixes */
 
