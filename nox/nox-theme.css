@@ -1161,6 +1161,17 @@ svg[name="Nova_AddReaction"] path{
 /* Codeblocks */
 
 /* Settings */
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, 
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP {
+  justify-content: flex-start;
+}
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
+  -ms-flex: 0;
+  -ms-flex-pack: end;
+  flex: 0;
+  z-index: 1;
+}
+
 .layer-3QrUeG[aria-label*="SETTINGS"] .sidebarRegion-VFTUkN .sidebar-CFHs9e:before, .layer-3QrUeG[aria-label*="RTC"] .sidebarRegion-VFTUkN .sidebar-CFHs9e:before { content: "SETTINGS"; position: absolute; top: 0; right: 0; color: #fff; background: #191919; width: 226px; z-index: 1; padding: 15px 8px; box-sizing: border-box;}
 /* Settings */
 
