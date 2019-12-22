@@ -1190,7 +1190,7 @@ svg[name="Nova_AddReaction"] path{
 .layer-3QrUeG[aria-label*="SETTINGS"] .sidebarRegion-VFTUkN .sidebar-CFHs9e:before, .layer-3QrUeG[aria-label*="RTC"] .sidebarRegion-VFTUkN .sidebar-CFHs9e:before { content: "SETTINGS"; position: absolute; top: 0; right: 0; color: #fff; background: #191919; width: 226px; z-index: 1; padding: 15px 8px; box-sizing: border-box;}
 /* Settings */
 
-/*New Profile Modals*
+/*New Profile Modals*/
 .modal-3c3bKg {
 	transform: none !important;
 }
@@ -1200,19 +1200,14 @@ svg[name="Nova_AddReaction"] path{
 .root-SR8cQa {
 	position: fixed;
 	right:0;
-	height: calc(100vh - 22px);
-	width: calc(100vw - 0px);
-	top: 22px;
+	height: calc(100vh - 70px);
+	width: calc(100vw - 310px);
+	top: 70px;
 	border-radius: 0;
 	overflow-y: auto;
 	animation: opacity .75s ease;
 	background: var(--nox-level1);
 }
-.root-SR8cQa .header-QKLPzZ .additionalActionsIcon-1FoUlE {
-    position: absolute;
-    background-image: "";
-}
-/*User Profile Backgrounds*
 .listScroller-2_vlfo {
   display:flex;
   flex-wrap:wrap;
@@ -1264,4 +1259,37 @@ svg[name="Nova_AddReaction"] path{
 .listRowContent-3Kih4Q {
   display:block;
   z-index:1;
+}
+.root-SR8cQa .header-QKLPzZ button {
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.8) !important;
+	font-size: 12px;
+	transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+	z-index: 100;
+}
+.root-SR8cQa .header-QKLPzZ .headerInfo-30uryT + .flex-1xMQg5 button {
+	position:relative;
+	right:0;
+	bottom:0;
+}
+.root-SR8cQa .header-QKLPzZ .headerInfo-30uryT + .flex-1xMQg5 {
+	position:absolute;
+	right:10px;
+	bottom:50px;
+}
+.additionalActionsIcon-1FoUlE {
+	position: absolute;
+	top: 10px;
+	border: 2px solid;
+	border-radius: 2px;
+	right: 10px;
+	color: #fff !important;
+	opacity: .5;
+	z-index: 100;
+}
+#app-mount .root-SR8cQa .header-QKLPzZ button:hover {
+	color: #fff !important;
 }

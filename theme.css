@@ -362,7 +362,7 @@ body {
     border-top: 2px solid;
     border-bottom: 2px solid;
     text-align: -webkit-center;
-    border-image: linear-gradient(90deg, transparent, var(--nox-accent), transparent);
+    border-image: linear-gradient(90deg, transparent, var(--main-color), transparent);
     border-image-slice: var(--image-slice);
 }
 .userPopout-3XzG_A .body-3iLsc4 {
@@ -1483,7 +1483,6 @@ box-shadow: 0 6px 10px -8px var(--accent);
 .userInfoSection-2acyCx+.userInfoSection-2acyCx {
 	border: none!important
 }
-/*User Profile Backgrounds*
 #app-mount .header-QKLPzZ .avatar-3EQepX::before {
 	content: '';
 	position: fixed;
