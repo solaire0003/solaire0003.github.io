@@ -539,6 +539,140 @@ svg[name="Nova_AddReaction"] path{
 .contentColumn-2hrIYH .notDetected-33MY4s {
 	background: var(--nox-level3);
 }
+/*Fix home button responsiveness*/
+.listItem-2P_4kh:hover .wrapper-1BJsBx .childWrapper-anI2G9:not(.acronym-2mOFsV)::after {
+    background:var(--nox-accent);
+}
+
+/*Fix elevation*/
+.header-2o-2hj,
+.sidebar-2K8pFh .scrollerWrap-2lJEkd,
+.container-3baos1{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-2K8pFh {
+    overflow:visible !important;
+}
+
+.base-3dtUhz .container-1r6BKw,
+.container-3baos1,
+.sidebar-2K8pFh{
+    z-index:10 !important;
+}
+
+/*Menu uses wrong animations*/
+.layer-v9HyYc .menu-Sp6bN1 {
+    margin-top:-8px;
+    animation:popoutanim 300ms cubic-bezier(0.4, 0, 0, 1), opacity 100ms ease 100ms backwards;
+}
+
+/*Friends Table Add header uses too much box-shadow*/
+.container-3gCOGc .friendsTable-133bsv .friendTableAddWrapper-nHHZtK .friendTableAddHeader-m9bzFr {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5)
+}
+
+/*Add server modal style is overwritten by BD stylesheet*/
+.animator-US5i9g div.slide-2pHaq5 {
+    background: var(--nox-level3) !important;
+}
+
+.animator-US5i9g .action-1lSjCi,
+.animator-US5i9g form.slide-2pHaq5{
+    background: var(--nox-level2) !important;
+    border:none;
+}
+
+.modal-yWgWj- .footer-3rDWdC {
+    background-color: var(--nox-level1) !important;
+}
+
+/*Region Selector is also overwritten by BD*/
+.regionSelectModal-12e-57 {
+    background: var(--nox-level2) !important;
+}
+
+.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {
+    background: var(--nox-level1) !important;
+}
+
+/*Private Channels*/
+.selected-aXhQR6 .layout-2DM8Md {
+    background:var(--nox-level3) !important;
+}
+
+.channel-2QD9_O .layout-2DM8Md:hover {
+    background:rgba(255, 255, 255, 0.05);
+}
+
+.channel-2QD9_O[href="/activity"],
+.channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]),
+.channel-2QD9_O[href="/library"],
+.channel-2QD9_O[href="/store"] {
+	display: inline-block;
+	transition: 150ms ease all;
+	margin-top: 0;
+	padding: initial;
+	width: calc(25% - 10px);
+	background: 0 0;
+	box-shadow: none;
+	border: none;
+}
+
+.channel-2QD9_O[href="/activity"] .layout-2DM8Md,
+.channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]) .layout-2DM8Md,
+.channel-2QD9_O[href="/library"] .layout-2DM8Md,
+.channel-2QD9_O[href="/store"] .layout-2DM8Md {
+	flex-direction: column;
+	height: 50px;
+}
+
+.channel-2QD9_O[href="/activity"]:hover .layout-2DM8Md,
+.channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]):hover .layout-2DM8Md,
+.channel-2QD9_O[href="/library"]:hover .layout-2DM8Md,
+.channel-2QD9_O[href="/store"]:hover .layout-2DM8Md {
+    background:transparent !important;
+}
+
+.channel-2QD9_O[href="/activity"] .avatar-3uk_u9,
+.channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]) .avatar-3uk_u9,
+.channel-2QD9_O[href="/library"] .avatar-3uk_u9,
+.channel-2QD9_O[href="/store"] .avatar-3uk_u9 {
+	margin: 0;
+}
+
+.channel-2QD9_O[href="/activity"] .name-uJV0GL,
+.channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]) .name-uJV0GL,
+.channel-2QD9_O[href="/library"] .name-uJV0GL,
+.channel-2QD9_O[href="/store"] .name-uJV0GL {
+	font-size:12px;
+}
+
+/*Fix avatar ripple on user popouts*/
+.userPopout-3XzG_A .wrapper-3t9DeA::after,
+.container-3baos1 .avatar-SmRMf2::after {
+  content: "";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:50px;
+  background-color:#fff;
+  opacity:0;
+  transition:150ms ease;
+}
+.userPopout-3XzG_A .wrapper-3t9DeA:active::after,
+.container-3baos1 .avatar-SmRMf2:active::after {
+  transform:scale(1.25);
+  opacity:.12;
+}
+
+/*Emote picker QEM Container*/
+#bda-qem {
+    height:44px;
+    background:var(--nox-level2);
+}
 /* Fixes */
 
 /* Codeblocks */
